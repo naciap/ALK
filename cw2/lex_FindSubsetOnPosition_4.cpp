@@ -8,21 +8,21 @@ using namespace std;
 (według wektorów charakterystycznych) podzbiorów zbioru{1,...,n}.*/
 
 bool* decimalToBinaryConversion(int number, int n){
-	number--; //first index=0
 	bool *binarySubset=new bool[n+1];
 	for(int i=0;i<n;i++){
 		binarySubset[i]=0;
 	}
 	n--;
-	while(number!=1){
-		if(number%2==1){
-			binarySubset[n]=1;
+	if (number!=0){
+		while(number!=1){
+			if(number%2==1){
+				binarySubset[n]=1;
+			}
+			n--;
+			number/=2;
 		}
-		n--;
-		number/=2;
+		binarySubset[n]=1;
 	}
-	binarySubset[n]=1;
-	
 	return binarySubset;
 }
 
