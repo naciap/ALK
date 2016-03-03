@@ -26,7 +26,7 @@ void binaryToIntConversion(bool *A, int n){
 	int s=0;
 	for(int i=1; i<=n; i++){
 		if(A[i]!=0){
-			s+=pow(2, i-1);
+			s+=pow(2, n-i);
 		}
 	}
 	printf("%d", s);
