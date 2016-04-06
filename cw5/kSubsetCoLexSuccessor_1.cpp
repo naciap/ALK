@@ -30,7 +30,7 @@ if(i==0) {
 
 T[i]=T[i]+1;
 
-for(int j=i+1; i<=k; i++){
+for(int j=i+1; j<=k; j++){
 	T[j]=k-j+1;
 }
 
