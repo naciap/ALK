@@ -10,6 +10,10 @@ int main() {
 	int *part = new int [n+2];
 	int *conj = new int [n+2];
 	
+	for(int=0; i<n; i++){
+		conj[i]=0;
+	}
+	
 	for(int i=0; i<n; i++){
 		scanf("%d", &part[i]);
 	}
